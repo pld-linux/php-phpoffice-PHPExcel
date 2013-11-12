@@ -29,6 +29,7 @@ Suggests:	php(simplexml)
 Suggests:	php(sqlite)
 Suggests:	php(xmlreader)
 Suggests:	php(zip)
+Suggests:	php-jpgraph
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
