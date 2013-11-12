@@ -82,7 +82,41 @@ rm -rf $RPM_BUILD_ROOT
 %defattr(644,root,root,755)
 %doc install.txt changelog.txt
 %{php_data_dir}/PHPExcel.php
-%{php_data_dir}/PHPExcel
+%dir %{php_data_dir}/PHPExcel
+%{php_data_dir}/PHPExcel/*.php
+%{php_data_dir}/PHPExcel/CachedObjectStorage
+%{php_data_dir}/PHPExcel/CalcEngine
+%{php_data_dir}/PHPExcel/Calculation
+%{php_data_dir}/PHPExcel/Cell
+%{php_data_dir}/PHPExcel/Chart
+%{php_data_dir}/PHPExcel/Reader
+%{php_data_dir}/PHPExcel/RichText
+%{php_data_dir}/PHPExcel/Shared
+%{php_data_dir}/PHPExcel/Style
+%{php_data_dir}/PHPExcel/Worksheet
+%{php_data_dir}/PHPExcel/Writer
+
+%dir %{php_data_dir}/PHPExcel/locale
+%lang(cs) %{php_data_dir}/PHPExcel/locale/cs
+%lang(da) %{php_data_dir}/PHPExcel/locale/da
+%lang(de) %{php_data_dir}/PHPExcel/locale/de
+%lang(en_GB) %dir %{php_data_dir}/PHPExcel/locale/en
+%lang(en_GB) %{php_data_dir}/PHPExcel/locale/en/uk
+%lang(es) %{php_data_dir}/PHPExcel/locale/es
+%lang(fi) %{php_data_dir}/PHPExcel/locale/fi
+%lang(fr) %{php_data_dir}/PHPExcel/locale/fr
+%lang(hu) %{php_data_dir}/PHPExcel/locale/hu
+%lang(it) %{php_data_dir}/PHPExcel/locale/it
+%lang(nb) %{php_data_dir}/PHPExcel/locale/no
+%lang(nl) %{php_data_dir}/PHPExcel/locale/nl
+%lang(pl) %{php_data_dir}/PHPExcel/locale/pl
+%lang(pt_BR) %dir %{php_data_dir}/PHPExcel/locale/pt
+%lang(pt_BR) %{php_data_dir}/PHPExcel/locale/pt/br
+%lang(pt_BR) %{php_data_dir}/locale/pt/config
+%lang(pt_BR) %{php_data_dir}/locale/pt/functions
+%lang(ru) %{php_data_dir}/PHPExcel/locale/ru
+%lang(sv) %{php_data_dir}/PHPExcel/locale/sv
+%lang(tr) %{php_data_dir}/PHPExcel/locale/tr
 
 %files examples
 %defattr(644,root,root,755)
