@@ -1,7 +1,7 @@
 # TODO
 # - drop PHPExcel/Calculation/Functions.php - php compat functions (find minimum required and use that in .spec)
 # - mbstring used unconditionally in some places: ./PHPExcel/Writer/CSV.php, ./PHPExcel/Calculation.php
-# %define		pkgname	PHPExcel
+%define		pkgname	PHPExcel
 %define		php_min_version 5.2.1
 %include	/usr/lib/rpm/macros.php
 Summary:	PHPExcel - OpenXML - Create Excel2007 documents in PHP - Spreadsheet engine
@@ -22,7 +22,6 @@ Requires:	php(mbstring)
 Requires:	php(pcre)
 Requires:	php(spl)
 Requires:	php(xml)
-Requires:	php-pear
 Suggests:	php(gd)
 Suggests:	php(iconv)
 Suggests:	php(simplexml)
