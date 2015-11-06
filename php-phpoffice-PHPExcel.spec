@@ -7,7 +7,7 @@
 Summary:	PHPExcel - OpenXML - Create Excel2007 documents in PHP - Spreadsheet engine
 Name:		php-phpoffice-%{pkgname}
 Version:	1.7.9
-Release:	3
+Release:	4
 License:	LGPL v2.1
 Group:		Development/Languages/PHP
 Source0:	https://github.com/PHPOffice/PHPExcel/archive/%{version}/%{pkgname}-%{version}.tar.gz
@@ -27,6 +27,7 @@ Suggests:	php(iconv)
 Suggests:	php(simplexml)
 Suggests:	php(sqlite)
 Suggests:	php(xmlreader)
+Suggests:	php(xmlwriter)
 Suggests:	php(zip)
 Suggests:	php-jpgraph
 BuildArch:	noarch
