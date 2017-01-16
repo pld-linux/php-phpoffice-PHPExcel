@@ -6,12 +6,12 @@
 %include	/usr/lib/rpm/macros.php
 Summary:	PHPExcel - OpenXML - Create Excel2007 documents in PHP - Spreadsheet engine
 Name:		php-phpoffice-%{pkgname}
-Version:	1.7.9
-Release:	4
+Version:	1.8.1
+Release:	1
 License:	LGPL v2.1
 Group:		Development/Languages/PHP
 Source0:	https://github.com/PHPOffice/PHPExcel/archive/%{version}/%{pkgname}-%{version}.tar.gz
-# Source0-md5:	3a08fd80a8d77c79c72b2ce6f1d4440c
+# Source0-md5:	c72783d9704e90120b480001335e7518
 URL:		http://phpexcel.codeplex.com/
 BuildRequires:	rpm-php-pearprov >= 4.4.2-11
 BuildRequires:	rpmbuild(macros) >= 1.654
@@ -90,6 +90,7 @@ rm -rf $RPM_BUILD_ROOT
 %{php_data_dir}/PHPExcel/Calculation
 %{php_data_dir}/PHPExcel/Cell
 %{php_data_dir}/PHPExcel/Chart
+%{php_data_dir}/PHPExcel/Helper
 %{php_data_dir}/PHPExcel/Reader
 %{php_data_dir}/PHPExcel/RichText
 %{php_data_dir}/PHPExcel/Shared
@@ -98,6 +99,7 @@ rm -rf $RPM_BUILD_ROOT
 %{php_data_dir}/PHPExcel/Writer
 
 %dir %{php_data_dir}/PHPExcel/locale
+%lang(bg) %{php_data_dir}/PHPExcel/locale/bg
 %lang(cs) %{php_data_dir}/PHPExcel/locale/cs
 %lang(da) %{php_data_dir}/PHPExcel/locale/da
 %lang(de) %{php_data_dir}/PHPExcel/locale/de
