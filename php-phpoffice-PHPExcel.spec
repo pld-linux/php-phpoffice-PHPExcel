@@ -3,7 +3,6 @@
 # - mbstring used unconditionally in some places: ./PHPExcel/Writer/CSV.php, ./PHPExcel/Calculation.php
 %define		pkgname	PHPExcel
 %define		php_min_version 5.2.1
-%include	/usr/lib/rpm/macros.php
 Summary:	PHPExcel - OpenXML - Create Excel2007 documents in PHP - Spreadsheet engine
 Name:		php-phpoffice-%{pkgname}
 Version:	1.8.1
